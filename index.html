@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Random Quote Generator</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="https://getbootstrap.com/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://getbootstrap.com/favicon.ico" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" >
+    <!-- Loading fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- Loading CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
-  <div class="container">
-      <div class="jumbotron">
-        <h1 id="title" class="display-3 text-center animated fadeInLeft">Clément Hlrdt</h1>
-        <p class="lead">Hi there, here's my random quote generator for Free Code Camp</p>
-        <hr class="my-4">
-        <p>To get a quote, click on the button right below</p>
-        <p class="lead">
-          <button type="button" class="btn btn-secondary" id="quoteBtn">Get a quote !</button>
-          <button class="btn btn-twitter" id="twitter-btn" onclick="tweetIt()"><i class="fa fa-twitter fa-fw"></i>Tweet it!</button>
-        </p>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <span class="animated fadeInLeft"id="quote"></span>
+    <!-- Container -->
+    <div class="container">
+        <!-- First jumbotron -->
+        <div class="jumbotron">
+            <!-- Title -->
+            <h1 id="title" class="display-3 text-center animated fadeInLeft">Clément Hlrdt</h1>
+            <p class="lead">Hi there, here's my random quote generator for Free Code Camp</p>
+            <hr class="my-4">
+            <p>To get a quote, click on the button right below</p>
+            <!-- Buttons to get a quote & button to share the quote on twitter -->
+            <p class="lead">
+                <button type="button" class="btn btn-secondary" id="quoteBtn">Get a quote !</button>
+                <button class="btn btn-twitter" id="twitter-btn" onclick="tweetIt()"><i class="fa fa-twitter fa-fw"></i>Tweet it!</button>
+            </p>
+            <!-- First row  -  Contains the quote-->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="animated fadeInLeft" id="quote"></span>
+                </div>
             </div>
-            <div class="col-md text-center">
-              <span id="author"></span>
+            <!-- Second row - Contains the author-->
+            <div class="row">
+                <div class="col-md text-center">
+                    <span id="author"></span>
+                </div>
             </div>
-          </div>
-      </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/custom.js" type="text/javascript"></script>
+        </div>
+        <!-- Loading scripts -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
 </body>
+
 </html>
