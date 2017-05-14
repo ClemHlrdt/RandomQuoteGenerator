@@ -1,0 +1,40 @@
+#title {
+ font-family: 'Pacifico', cursive;
+  margin: 5%;
+}
+
+body {
+  background-image:url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+}
+
+#author {
+  margin: 20px;
+  float: right;
+}
+
+.btn-twitter {
+	  background: #00ACEE;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #0075a2;
+	}
+	.btn-twitter:link, .btn-twitter:visited {
+	  color: #fff;
+	}
+	.btn-twitter:active, .btn-twitter:hover {
+	  background: #0075a2;
+	  color: #fff;
+	}
+
+  #twitter-btn {
+    float: right;
+  }
